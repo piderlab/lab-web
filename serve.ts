@@ -9,6 +9,7 @@ const html = (markdown: string) => `
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>畑研究室</title>
     <style>
       main {
         max-width: 800px;
@@ -36,7 +37,7 @@ serve(async (req) => {
   const { pathname } = new URL(req.url);
   if (pathname.endsWith(".md")) {
     return new Response(html(await res.text()), {
-      headers: { ...res.headers, "Content-Type": contentType(".html") },
+      headers: { "Content-Type": contentType(".html") },
     });
   } else {
     return res;
