@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "serve": "deno run --unstable --watch --allow-read=. --allow-net ./serve.ts"
+  },
+  "lock": false
+}
