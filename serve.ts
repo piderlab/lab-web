@@ -1,16 +1,24 @@
 import { serve } from "https://deno.land/std@0.160.0/http/mod.ts";
 import { serveDir } from "https://deno.land/std@0.160.0/http/file_server.ts";
+import { basename } from "https://deno.land/std@0.175.0/path/mod.ts";
 import { contentType } from "https://deno.land/std@0.160.0/media_types/mod.ts";
+import {
+  extract,
+  test,
+} from "https://deno.land/std@0.175.0/encoding/front_matter/any.ts";
 import { CSS, render } from "https://deno.land/x/gfm@0.1.26/mod.ts";
 import { transpileResponse } from "https://deno.land/x/ts_serve@v1.4.3/utils/transpile_response.ts";
 
-const html = (markdown: string, { isTopPage }: { isTopPage: boolean }) => `
+const html = (
+  markdown: string,
+  { isTopPage, title }: { isTopPage: boolean; title: unknown },
+) => `
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>畑研究室</title>
+    <title>畑研究室 - ${title || ""}</title>
     <style>
       header {
         max-width: 800px;
@@ -62,7 +70,15 @@ serve(async (req) => {
   const isTopPage = pathname === "/README.md";
 
   if (pathname.endsWith(".md")) {
-    return new Response(html(await res.text(), { isTopPage }), {
+    // front matterを読んでタイトルを設定
+    let body = await res.text();
+    let title;
+    if (test(body)) {
+      ({ body, attrs: { title } } = extract(body));
+    }
+    title ||= basename(pathname);
+
+    return new Response(html(body, { isTopPage, title }), {
       headers: { "Content-Type": contentType(".html") },
     });
   } else if (
