@@ -25,5 +25,6 @@
     }
   },
 
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "postStartCommand": "deno task serve"
 }
