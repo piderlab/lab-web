@@ -1,7 +1,7 @@
-import { serve } from "https://deno.land/std@0.160.0/http/mod.ts";
-import { serveDir } from "https://deno.land/std@0.160.0/http/file_server.ts";
+import { serve } from "https://deno.land/std@0.175.0/http/mod.ts";
+import { serveDir } from "https://deno.land/std@0.175.0/http/file_server.ts";
 import { basename } from "https://deno.land/std@0.175.0/path/mod.ts";
-import { contentType } from "https://deno.land/std@0.160.0/media_types/mod.ts";
+import { contentType } from "https://deno.land/std@0.175.0/media_types/mod.ts";
 import {
   extract,
   test,
