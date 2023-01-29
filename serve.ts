@@ -62,7 +62,7 @@ serve(async (req) => {
     if (await exists(new URL(import.meta.resolve(`.${pathname}README.md`)))) {
       return new Response("301", {
         status: 301,
-        headers: { location: `${req.url}README.md` },
+        headers: { location: `${pathname}README.md` },
       });
     }
   }
