@@ -20,11 +20,12 @@
 
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "denoland.vscode-deno"
+        "denoland.vscode-deno",
+        "formulahendry.code-runner"
       ]
     }
   },
 
   "remoteUser": "vscode",
-  "postStartCommand": "deno task serve"
+  "forwardPorts": [8000]
 }
