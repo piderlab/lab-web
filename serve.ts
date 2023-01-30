@@ -1,5 +1,3 @@
-#!/usr/bin/env -S deno task serve
-
 import { serve } from "https://deno.land/std@0.175.0/http/mod.ts";
 import { serveDir } from "https://deno.land/std@0.175.0/http/file_server.ts";
 import { basename } from "https://deno.land/std@0.175.0/path/mod.ts";

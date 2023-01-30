@@ -15,7 +15,12 @@
         // Enables Deno linting for the project
         "deno.lint": true,
         // Sets Deno as the default formatter for the project
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "code-runner.runInTerminal": true,
+        "code-runner.executorMap": {
+          "javascript": "deno run --unstable --watch --allow-read=. --allow-net",
+          "typescript": "deno run --unstable --watch --allow-read=. --allow-net"
+        }
       },
 
       // Add the IDs of extensions you want installed when the container is created.
@@ -27,5 +32,6 @@
   },
 
   "remoteUser": "vscode",
-  "forwardPorts": [8000]
+  "forwardPorts": [8000],
+  "postStartCommand": "deno cache ./serve.ts"
 }
