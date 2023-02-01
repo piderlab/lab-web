@@ -6,7 +6,7 @@ import {
   extract,
   test,
 } from "https://deno.land/std@0.175.0/encoding/front_matter/any.ts";
-import { CSS, render } from "https://deno.land/x/gfm@0.1.26/mod.ts";
+import { CSS, render } from "https://deno.land/x/gfm@0.1.29/mod.ts";
 import { transpileResponse } from "https://deno.land/x/ts_serve@v1.4.3/utils/transpile_response.ts";
 
 const html = (
@@ -47,7 +47,7 @@ const html = (
       ${isTopPage ? "" : '≪ <a href="/README.md">ホームに戻る</a>'}
     </header>
     <main data-color-mode="light" data-light-theme="light" data-dark-theme="dark" class="markdown-body">
-      ${render(markdown)}
+      ${render(markdown, { disableHtmlSanitization: true })}
     </main>
   </body>
 </html>
