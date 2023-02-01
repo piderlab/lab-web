@@ -2,6 +2,13 @@
 title: 2022年度卒論発表会
 ---
 
+<style>
+.blur,.blur::selection {
+  color: transparent;
+  text-shadow: 0 0 16px rgb(0 0 0);
+}
+</style>
+
 # 実証的ソフトウェア工学研究室 2022年度 卒論発表会
 
 - 会場：W1棟-115教室
@@ -19,6 +26,6 @@ title: 2022年度卒論発表会
 
 発表者：19T2158D 矢島聖成
 
-## 4. <span style="color: transparent;text-shadow: 0 0 16px rgb(0 0 0);">ここにタイトルを入力ここにタイトルを入力</span> 13:45～14:00
+## 4. <span class="blur">ここにタイトルを入力ここにタイトルを入力</span> 13:45～14:00
 
 発表者：19T2014F 井出 翼
