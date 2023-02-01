@@ -19,6 +19,6 @@ title: 2022年度卒論発表会
 
 発表者：19T2158D 矢島聖成
 
-## 4. <span style="color: transparent;text-shadow: 0 0 20px rgba(0,0,0,0.5);">○○○○○○○○○○</span> 13:45～14:00
+## 4. <span style="color: transparent;text-shadow: 0 0 16px rgb(0 0 0);">ここにタイトルを入力ここにタイトルを入力</span> 13:45～14:00
 
 発表者：19T2014F 井出 翼
