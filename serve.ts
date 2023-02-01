@@ -6,7 +6,7 @@ import {
   extract,
   test,
 } from "https://deno.land/std@0.175.0/encoding/front_matter/any.ts";
-import { CSS, render } from "https://deno.land/x/gfm@0.1.26/mod.ts";
+import { CSS, render } from "https://deno.land/x/gfm@0.1.29/mod.ts";
 import { transpileResponse } from "https://deno.land/x/ts_serve@v1.4.3/utils/transpile_response.ts";
 
 const html = (
