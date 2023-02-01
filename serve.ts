@@ -47,7 +47,7 @@ const html = (
       ${isTopPage ? "" : '≪ <a href="/README.md">ホームに戻る</a>'}
     </header>
     <main data-color-mode="light" data-light-theme="light" data-dark-theme="dark" class="markdown-body">
-      ${render(markdown)}
+      ${render(markdown, { disableHtmlSanitization: true })}
     </main>
   </body>
 </html>
