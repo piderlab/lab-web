@@ -4,7 +4,8 @@ title: トップページ
 
 # 実証的ソフトウェア工学研究室のホームページ
 
-[信州大学 実証的ソフトウェア工学研究室](https://www.shinshu-u.ac.jp/faculty/engineering/eict/introduction/teacher/hata-hideaki.php)の公式Webサイトです。
+[信州大学 実証的ソフトウェア工学研究室](
+https://www.shinshu-u.ac.jp/faculty/engineering/eict/laboratory/cat/hata_hideaki/)の公式Webサイトです。
 
 ## 研究
 
