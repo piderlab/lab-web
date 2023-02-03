@@ -2,6 +2,8 @@
 title: 2022年度卒論発表会
 ---
 
+<script src="https://esm.sh/pdf-viewer-web-component@0.0.23" type="module"></script>
+
 # 実証的ソフトウェア工学研究室 2022年度 卒論発表会
 
 - 会場：W1棟-115教室
@@ -11,6 +13,8 @@ title: 2022年度卒論発表会
 ## 1. denoの外部モジュールのバージョンについての実証分析
 
 発表者：19T2110K 中谷 颯人
+
+<pdf-viewer canvas-width="600" url="./19T2110K.pdf"></pdf-viewer>
 
 ## 2. denoにおける外部モジュールimportの組み合わせについての実証分析
 
