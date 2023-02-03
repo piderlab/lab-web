@@ -20,22 +20,22 @@ iframe {
 
 発表者：19T2110K 中谷 颯人
 
-<iframe src="https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2110K.pdf"></iframe>
+<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2110K.pdf"></iframe>
 
 ## 2. denoにおける外部モジュールimportの組み合わせについての実証分析
 
 発表者：19T2083J 志良堂 泰成
 
-<iframe src="https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2083J.pdf"></iframe>
+<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2083J.pdf"></iframe>
 
 ## 3. RFCを参照したセキュリティアドバイザリについての調査
 
 発表者：19T2158D 矢島 聖成
 
-<iframe src="https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2158D.pdf"></iframe>
+<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2158D.pdf"></iframe>
 
 ## 4. オークション方式カーシェアにおけるユーザー使用履歴の可視化分析
 
 発表者：19T2014F 井出 翼
 
-<iframe src="https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2014F.pdf"></iframe>
+<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/piderlab/lab-web/main/2022/19T2014F.pdf"></iframe>
