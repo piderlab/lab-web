@@ -6,7 +6,7 @@ title: 2022年度卒論発表会
 
 - 会場：W1棟-115教室
 - 日時：2023年2月3日（金）13:00 - 14:15（発表12分、質疑3分）
-- オンライン視聴URL: https://meet.google.com/zsm-qxsz-sat
+- オンライン視聴URL：https://meet.google.com/zsm-qxsz-sat
 
 ## 1. denoの外部モジュールのバージョンについての実証分析
 
