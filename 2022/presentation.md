@@ -32,7 +32,9 @@ iframe {
 
 発表者：19T2158D 矢島 聖成
 
+<!---
 <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/piderlab/lab-web/raw/main/2022/19T2158D.pdf"></iframe>
+-->
 
 ## 4. オークション方式カーシェアにおけるユーザー使用履歴の可視化分析
 
