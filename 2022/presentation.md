@@ -14,7 +14,9 @@ title: 2022年度卒論発表会
 
 発表者：19T2110K 中谷 颯人
 
-<pdf-viewer canvas-width="600" url="./19T2110K.pdf"></pdf-viewer>
+<div style="width: 600px;">
+  <pdf-viewer canvas-width="600" url="./19T2110K.pdf"></pdf-viewer>
+</div>
 
 ## 2. denoにおける外部モジュールimportの組み合わせについての実証分析
 
