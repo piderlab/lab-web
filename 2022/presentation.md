@@ -2,7 +2,7 @@
 title: 2022年度卒論発表会
 ---
 
-<script src="https://esm.sh/pdf-viewer-web-component@0.0.23" type="module"></script>
+<script src="https://esm.sh/pdf-viewer-web-component@0.0.23/dist/esm/index.mjs" type="module"></script>
 
 # 実証的ソフトウェア工学研究室 2022年度 卒論発表会
 
