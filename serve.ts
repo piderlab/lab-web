@@ -1,25 +1,51 @@
-import { serve } from "https://deno.land/std@0.175.0/http/mod.ts";
-import { serveDir } from "https://deno.land/std@0.175.0/http/file_server.ts";
-import { basename } from "https://deno.land/std@0.175.0/path/mod.ts";
-import { contentType } from "https://deno.land/std@0.175.0/media_types/mod.ts";
+import { serve } from "https://deno.land/std@0.176.0/http/mod.ts";
+import { serveDir } from "https://deno.land/std@0.176.0/http/file_server.ts";
+import { basename } from "https://deno.land/std@0.176.0/path/mod.ts";
+import { contentType } from "https://deno.land/std@0.176.0/media_types/mod.ts";
 import {
   extract,
   test,
-} from "https://deno.land/std@0.175.0/encoding/front_matter/any.ts";
+} from "https://deno.land/std@0.176.0/encoding/front_matter/any.ts";
 import { CSS, render } from "https://deno.land/x/gfm@0.1.29/mod.ts";
 import { transpileResponse } from "https://deno.land/x/ts_serve@v1.4.3/utils/transpile_response.ts";
 
+const WEBSITE_URL = "https://piderlab.deno.dev";
+
+interface HtmlRenderOption {
+  isTopPage: boolean;
+  title: unknown;
+  description: unknown;
+}
+
 const html = (
   markdown: string,
-  { isTopPage, title }: { isTopPage: boolean; title: unknown },
+  { isTopPage, title, description }: HtmlRenderOption,
 ) => `
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="${description}">
     <title>${title || ""} | 信州大学 実証的ソフトウェア工学研究室</title>
+    <meta name="theme-color" content="#333333">
+    <meta property="og:title" content="${title}">
+    <meta property="og:description" content="${description}">
+    <meta property="og:url" content="${WEBSITE_URL}">
+    <meta property="og:image" content="https://favi.deno.dev/⛺.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hideakihata">
+    <link rel="icon" type="image/png" href="https://favi.deno.dev/⛺.png">
+    <link rel="apple-touch-icon" href="https://favi.deno.dev/⛺.png">
+    <link rel="manifest" href="/manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service_worker.js')
+    </script>
     <style>
+      body {
+        min-height: 105vh;
+      }
       header {
         max-width: 800px;
         margin: 0 auto;
@@ -31,6 +57,9 @@ const html = (
       main {
         max-width: 800px;
         margin: 0 auto;
+      }
+      a {
+        line-height: 1.6em;
       }
       ${CSS}
       img{
@@ -67,18 +96,25 @@ serve(async (req) => {
     }
   }
 
+  if (pathname.match(/\.png$|\.jpeg$|\.jpg$|\.gif$|\.pdf$/)) {
+    res.headers.set("Cache-Control", `max-age=${60 * 60 * 24 * 30}`);
+  }
+
   const isTopPage = pathname === "/README.md";
 
   if (pathname.endsWith(".md")) {
     // front matterを読んでタイトルを設定
     let body = await res.text();
     let title;
+    let description;
     if (test(body)) {
-      ({ body, attrs: { title } } = extract(body));
+      ({ body, attrs: { title, description } } = extract(body));
     }
     title ||= basename(pathname);
+    description ||=
+      "信州大学 工学部 電子情報システム工学科 実証的ソフトウェア工学研究室のホームページです。";
 
-    return new Response(html(body, { isTopPage, title }), {
+    return new Response(html(body, { isTopPage, title, description }), {
       headers: { "Content-Type": contentType(".html") },
     });
   } else if (
