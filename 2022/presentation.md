@@ -3,7 +3,7 @@ title: 2022年度卒論発表会
 description: 2022年度卒論発表会の詳細とスライドを掲載しています。
 ---
 
-<script src="https://deno.land/x/embed_pdf@v1.1.0/mod.js" type="module"></script>
+<script src="https://deno.land/x/embed_pdf@v1.3.0/mod.js" type="module"></script>
 <style>
 embed-pdf {
   display: block;
