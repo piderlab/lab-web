@@ -1,0 +1,17 @@
+{
+  "name": "実証的ソフトウェア工学研究室のホームページ",
+  "short_name": "実証的ソフトウェア工学研究室",
+  "description": "信州大学 工学部 電子情報システム工学科 実証的ソフトウェア工学研究室のホームページです。",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "https://favi.deno.dev/⛺.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#333333",
+  "background_color": "#333333"
+}
