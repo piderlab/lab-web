@@ -39,6 +39,9 @@ const html = (
     <link rel="icon" type="image/png" href="https://favi.deno.dev/⛺.png">
     <link rel="apple-touch-icon" href="https://favi.deno.dev/⛺.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
     <script>
       if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service_worker.js')
     </script>
@@ -67,6 +70,9 @@ const html = (
         display: block;
         margin-left: auto;
         margin-right: auto;
+      }
+      body, main.markdown-body {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
       }
     </style>
     <meta name="google-site-verification" content="G2ikZbSlbpd3DbXWm1J3PJfIMteHbslhMLmuk1JzwNM" />
