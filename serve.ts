@@ -1,12 +1,12 @@
-import { serve } from "https://deno.land/std@0.176.0/http/mod.ts";
-import { serveDir } from "https://deno.land/std@0.176.0/http/file_server.ts";
-import { basename } from "https://deno.land/std@0.176.0/path/mod.ts";
-import { contentType } from "https://deno.land/std@0.176.0/media_types/mod.ts";
+import { serve } from "https://deno.land/std@0.179.0/http/mod.ts";
+import { serveDir } from "https://deno.land/std@0.179.0/http/file_server.ts";
+import { basename } from "https://deno.land/std@0.179.0/path/mod.ts";
+import { contentType } from "https://deno.land/std@0.179.0/media_types/mod.ts";
 import {
   extract,
   test,
-} from "https://deno.land/std@0.176.0/encoding/front_matter/any.ts";
-import { CSS, render } from "https://deno.land/x/gfm@0.1.29/mod.ts";
+} from "https://deno.land/std@0.179.0/encoding/front_matter/any.ts";
+import { CSS, render } from "https://deno.land/x/gfm@0.2.1/mod.ts";
 import { transpileResponse } from "https://deno.land/x/ts_serve@v1.4.3/utils/transpile_response.ts";
 
 const WEBSITE_URL = "https://piderlab.deno.dev";
