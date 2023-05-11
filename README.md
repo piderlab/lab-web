@@ -14,12 +14,6 @@ title: トップページ
 
 - 2023.01.31 [2022年度 卒論発表会の案内](./2022/presentation.md)を更新しました！
 
-## 研究室の様子
-
-現在6人の学生が活動しています！
-
-![研究室の様子](./assets/lab.png)
-
 ## リンク
 
 - [GitHub](https://github.com/piderlab/)
