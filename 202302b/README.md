@@ -1,6 +1,6 @@
 ---
-title: 2022年度卒論発表会
-description: 2022年度卒論発表会の詳細とスライドを掲載しています。
+title: 2023年2月卒論発表会
+description: 2023年2月卒論発表会の詳細とスライドを掲載しています。
 ---
 
 <script src="https://deno.land/x/embed_pdf@v1.3.0/mod.js" type="module"></script>
@@ -13,9 +13,9 @@ embed-pdf {
 }
 </style>
 
-# 実証的ソフトウェア工学研究室 2022年度 卒論発表会
+# 実証的ソフトウェア工学研究室 2023年2月 卒論発表会
 
-- 会場：W1棟-115教室
+- 会場：W1棟-115室
 - 日時：2023年2月3日（金）13:00 - 14:15（発表12分、質疑3分）
 - オンライン視聴URL：https://meet.google.com/zsm-qxsz-sat
 
