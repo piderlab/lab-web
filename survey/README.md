@@ -23,7 +23,7 @@ embed-pdf {
 https://paulralph.name/career_progression/
 
 対象は18-65歳でソフトウェア開発業務に携わっている方です。調査にご協力いただける方は次のページからお願いします。<br>
-https://surveys.dal.ca/opinio/s?s=80262&lang=ja
+https://surveys.dal.ca/opinio/s?s=80262&lang=ja<br>
 上記Webページより他の言語を選んでいただいても大丈夫です。
 
 大学卒業・大学院修了前の事前登録にご協力いただける場合はこちらからお願いします。<br>
