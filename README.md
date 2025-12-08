@@ -24,6 +24,7 @@ title: トップページ
 
 ## リンク
 
+- [ソフトウェアエンジニアリングシンポジウム2025においてインタラクティブ・ポスター賞を受賞](https://www.shinshu-u.ac.jp/topics/2025/10/-2025-1.html)
 - [第21回ITSシンポジウム2023においてベストポスター賞を受賞](https://www.shinshu-u.ac.jp/topics/2023/12/21its2023.html)
 - [新聞記事の紹介 ～オークション形式のカーシェアリング構想～](https://www.shinshu-u.ac.jp/topics/2022/01/post-281.html)
 - [Here’s how academic research is shaping GitHub Discussions](https://github.blog/news-insights/research/heres-how-academic-research-is-shaping-github-discussions/)
